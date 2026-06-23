@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识库 · 乐鱼日常查询与对照</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f6f0;
+            font-family: "Noto Serif SC", "Source Han Serif", Georgia, "Times New Roman", serif;
+            color: #2d2a24;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 1024px;
+            margin: 0 auto;
+            background: #fcfaf5;
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            border-left: 6px solid #b59b7e;
+            padding-left: 1.2rem;
+            margin-bottom: 1.8rem;
+            color: #3e352c;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 2rem 0 0.8rem 0;
+            color: #4d4034;
+            border-bottom: 1px dashed #d9cebe;
+            padding-bottom: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            word-break: break-word;
+        }
+
+        .intro-box {
+            background: #f2ede4;
+            padding: 1.6rem 2rem;
+            border-radius: 14px;
+            margin: 1.8rem 0 1.2rem 0;
+            border-left: 5px solid #c9b79b;
+        }
+
+        .intro-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 1.6rem 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 1.4rem 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            transition: background 0.2s;
+            border: 1px solid #ece6db;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #4a3f33;
+            margin-bottom: 0.4rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #4f4a42;
+            margin-bottom: 0.3rem;
+            line-height: 1.6;
+        }
+
+        .quote-block {
+            background: #f5f0e8;
+            padding: 1.2rem 1.8rem;
+            border-radius: 12px;
+            margin: 1.8rem 0;
+            font-style: normal;
+            border-left: 4px solid #b7a187;
+            color: #3d372f;
+        }
+
+        .quote-block p {
+            margin-bottom: 0.4rem;
+        }
+
+        .tip-box {
+            background: #efe9de;
+            border-radius: 16px;
+            padding: 1.2rem 1.6rem;
+            margin: 1.6rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+        }
+
+        .tip-box::before {
+            content: "📌";
+            font-size: 1.4rem;
+            line-height: 1.4;
+        }
+
+        .tip-box strong {
+            color: #5a4b3a;
+        }
+
+        .faq-summary {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin: 1.6rem 0 0.8rem 0;
+        }
+
+        .faq-item {
+            background: #fcf9f4;
+            border-radius: 10px;
+            padding: 0.8rem 1.2rem;
+            border-left: 3px solid #cfbea8;
+        }
+
+        .faq-item .q {
+            font-weight: 600;
+            color: #4f4133;
+        }
+
+        .faq-item .a {
+            color: #5d554b;
+            margin-top: 0.2rem;
+        }
+
+        .related-links {
+            margin-top: 2rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #dbd1c2;
+            font-size: 0.95rem;
+        }
+
+        .related-links a {
+            color: #735f4a;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a48b;
+            font-weight: 500;
+        }
+
+        .related-links a:hover {
+            color: #3e2e1f;
+            border-bottom-style: solid;
+        }
+
+        .footer-note {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #8f8579;
+            border-top: 1px solid #e3dbcf;
+            padding-top: 1.2rem;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 1rem 0.8rem; }
+            .page { padding: 1.5rem 1.2rem; }
+            h1 { font-size: 1.7rem; padding-left: 0.8rem; }
+            .grid-3 { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>📖 乐鱼 · 日常知识对照</h1>
+
+    <div class="intro-box">
+        <p>不论是随手查一个概念，还是想找一条清晰的对照信息，很多人都会打开 <a href="https://sitemobile-leyu.com" style="color:#5f4d39; text-decoration: underline; text-underline-offset:3px;">乐鱼</a> 看一眼。它就像一个随时可以翻阅的目录架，把零散的信息整理成有条理的段落，省去在多个页面之间来回跳转的麻烦。</p>
+        <p>这个页面围绕“查询—对照—延伸”的思路，汇集了几类最常被问到的方向。你可以把它当作一个快速的索引，也可以直接跳转到你感兴趣的部分。</p>
+    </div>
+
+    <h2>🧩 常见查询场景</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h3>术语对照</h3>
+            <p>遇到缩写、英文名或同义说法？在搜索框里输入关键词，就能看到并排的释义和对照表，省去手动拼凑的时间。</p>
+        </div>
+        <div class="card">
+            <h3>功能说明</h3>
+            <p>想了解某个设置背后的逻辑？说明区用简洁的文字拆解步骤和前提，看完就能明白怎么操作、为什么这样设计。</p>
+        </div>
+        <div class="card">
+            <h3>版本差异</h3>
+            <p>新旧版本之间改了什么、保留了什么？以条目式列出变化点，方便快速对照，不需要逐页翻找更新日志。</p>
+        </div>
+    </div>
+
+    <div class="quote-block">
+        <p>“以前查个东西要在好几个标签页里比来比去，现在直接打开乐鱼，分类和解释都摆在一起，看完心里就有数了。”</p>
+        <p style="text-align: right; font-size: 0.9rem; color: #6b5f50;">—— 来自日常使用者的反馈</p>
+    </div>
+
+    <h2>📋 信息区 · 索引与延伸</h2>
+    <p>除了基础查询，页面里通常还包含以下三类辅助模块，你可以根据自己的需要选择性阅读：</p>
+
+    <div class="grid-3" style="margin-top: 0.2rem;">
+        <div class="card">
+            <h3>🔍 快速定位</h3>
+            <p>顶部或者侧边的小目录，点击即可跳转到对应区块，不用反复滚动。</p>
+        </div>
+        <div class="card">
+            <h3>📎 延伸阅读</h3>
+            <p>每个主题下方可能会附上相关的文章链接或参考来源，方便进一步深挖。</p>
+        </div>
+        <div class="card">
+            <h3>💬 常见疑问</h3>
+            <p>把大家问得最多的问题整理成简短问答，避免重复解释，也减少遗漏。</p>
+        </div>
+    </div>
+
+    <div class="tip-box">
+        <div>
+            <strong>提示：</strong> 如果你在查找过程中遇到不确定的表述，可以试着换一个关键词重新搜索，<a href="https://sitemobile-leyu.com" style="color:#5f4d39; text-decoration: underline; text-underline-offset:2px;">乐鱼</a> 的对照区通常会同时列出近义或相关条目，帮助你找到更准确的答案。
+        </div>
+    </div>
+
+    <h2>❓ FAQ 摘要 · 常被问到的几个问题</h2>
+    <div class="faq-summary">
+        <div class="faq-item">
+            <div class="q">Q：为什么有些条目显示的是旧版信息？</div>
+            <div class="a">A：部分页面会保留历史版本作为对照参考，通常会在标题旁注明“历史存档”字样。如果你需要最新信息，可以留意页面顶部的更新日期。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">Q：搜索结果里出现多个相似词条，该选哪个？</div>
+            <div class="a">A：推荐优先选择带有“常用”或“标准”标签的条目，它们的内容经过梳理，结构更完整。如果仍有疑惑，可以查看词条底部的引用来源。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">Q：页面中的链接是否都指向同一来源？</div>
+            <div class="a">A：大部分链接指向站内相关页面，部分外部参考会单独标注。你可以在每个区块的末尾找到对应的出处说明。</div>
+        </div>
+    </div>
+
+    <div class="related-links">
+        <p>📂 相关信息 · 你可能还想了解： 
+            <a href="#">术语表</a> · 
+            <a href="#">更新日志</a> · 
+            <a href="#">使用指南</a> · 
+            <a href="#">反馈通道</a>
+        </p>
+        <p style="margin-top: 0.6rem;">💡 日常查询入口：<a href="https://sitemobile-leyu.com">乐鱼</a> — 打开即用，无需安装。</p>
+    </div>
+
+    <div class="footer-note">
+        <p>本页仅为知识库索引介绍，内容保持中立与克制。具体信息以 <a href="https://sitemobile-leyu.com" style="color:#6b5f50; text-decoration: none; border-bottom: 1px dotted #b7a48b;">乐鱼</a> 页面实际展示为准。</p>
+        <p style="margin-top: 0.4rem; letter-spacing: 0.5px;">—— 日常查阅 · 对照 · 延伸 ——</p>
+    </div>
+</div>
+</body>
+</html>
