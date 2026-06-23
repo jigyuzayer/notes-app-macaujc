@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐鱼 · 知识库入口</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f7f8fa;
+      color: #1e2329;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.5rem 1rem;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 720px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+      padding: 2.8rem 2.2rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.2rem;
+      color: #12171e;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 2.4rem 0 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #eef0f2;
+      color: #1f2937;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 1.6rem 0 0.4rem;
+      color: #2c3e50;
+    }
+
+    p {
+      margin-bottom: 0.9rem;
+      color: #2d3748;
+    }
+
+    a {
+      color: #0369a1;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease;
+    }
+
+    a:hover {
+      border-bottom-color: #0369a1;
+    }
+
+    .subhead {
+      font-size: 0.95rem;
+      color: #5f6b7a;
+      margin-bottom: 0.4rem;
+    }
+
+    .tagline {
+      font-size: 0.88rem;
+      background: #f0f4f9;
+      display: inline-block;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      color: #1f3a5f;
+      margin-top: 0.25rem;
+      letter-spacing: 0.3px;
+    }
+
+    .grid-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.6rem 0;
+    }
+
+    .card {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 1.2rem 1rem;
+      transition: background 0.2s ease;
+    }
+
+    .card:hover {
+      background: #eef3f8;
+    }
+
+    .card h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: #1e293b;
+    }
+
+    .card p {
+      font-size: 0.87rem;
+      color: #475569;
+      margin-bottom: 0;
+    }
+
+    .notice {
+      background: #fef9ee;
+      border-left: 4px solid #f5b342;
+      padding: 1rem 1.2rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .notice strong {
+      color: #9a6b1f;
+    }
+
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .faq-item .q {
+      font-weight: 500;
+      margin-bottom: 0.15rem;
+      color: #1e293b;
+    }
+
+    .faq-item .a {
+      font-size: 0.9rem;
+      color: #4b5563;
+      padding-left: 0.2rem;
+    }
+
+    .divider {
+      margin: 2rem 0 0.5rem;
+      border: 0;
+      height: 1px;
+      background: #e6e9ed;
+    }
+
+    .footer-note {
+      font-size: 0.8rem;
+      color: #7d8a9b;
+      margin-top: 0.8rem;
+      text-align: left;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 1.8rem 1.2rem;
+        border-radius: 16px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .grid-cards {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        padding: 1.2rem 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- 标题区 -->
+    <h1>乐鱼</h1>
+    <div class="subhead">知识库 · 快速识别站点用途</div>
+    <div class="tagline">分类索引 · 关键说明 · 场景提示</div>
+
+    <!-- 一句话定位 -->
+    <p style="margin-top: 1.8rem;">
+      <a href="https://sitehome-leyu.com">乐鱼</a> 是一个以信息整合与功能引导为核心的平台，面向需要快速定位内容区域的用户。本站不依赖复杂跳转，以目录化结构展示主要知识模块，帮助你在最短时间内判断是否符合需求。
+    </p>
+
+    <!-- 目录感卡片：信息模块速览 -->
+    <h2>核心知识分区</h2>
+    <div class="grid-cards">
+      <div class="card">
+        <h4>服务说明</h4>
+        <p>基础功能定义、适用条件及主要术语解释，建议初次访问时查阅。</p>
+      </div>
+      <div class="card">
+        <h4>操作指引</h4>
+        <p>分步骤流程与界面标注，涵盖高频任务及常见设置路径。</p>
+      </div>
+      <div class="card">
+        <h4>注意事项</h4>
+        <p>边界条件、限制情形及操作提醒，减少使用中的不确定因素。</p>
+      </div>
+      <div class="card">
+        <h4>关联参考</h4>
+        <p>外部文档、版本记录及补充阅读材料，用于进一步深挖细节。</p>
+      </div>
+    </div>
+
+    <!-- 介绍 + 特点 -->
+    <h2>页面布局逻辑</h2>
+    <p>
+      整个站点采用窄栏居中设计，各区域以清晰标题分割。左侧（或顶部）通常放置当前分类名称，右侧（或下方）对应详细说明。你无需逐页点击即可通过目录预览把握内容轮廓，从而决定下一步阅读方向。
+    </p>
+
+    <h3>值得注意的设计</h3>
+    <ul style="margin-left: 1.2rem; margin-bottom: 1.2rem; color: #2d3748;">
+      <li>每个分区标题独立，避免信息混杂；</li>
+      <li>关键术语首次出现时附有简短定义；</li>
+      <li>提示区块与正文分离，便于跳过或精读；</li>
+      <li>页面底部设有相关链接集合，扩展查阅路径。</li>
+    </ul>
+
+    <!-- 场景 / 用户画像 -->
+    <h2>典型使用场景</h2>
+    <p><strong>场景一 · 功能初探</strong><br>
+    当你想确认某个模块是否包含所需信息时，直接浏览对应卡片描述即可，无需逐级展开。</p>
+    <p><strong>场景二 · 快速引用</strong><br>
+    需要获取特定参数或注意事项，可通过目录定位到对应区块，复制要点内容。</p>
+    <p><strong>场景三 · 对比参考</strong><br>
+    同时查阅多个分类说明，利用并列卡片结构横向比较差异。</p>
+
+    <!-- FAQ 摘要 -->
+    <h2>常见疑问摘要</h2>
+
+    <div class="faq-item">
+      <div class="q">Q：为什么页面看起来内容不多？</div>
+      <div class="a">这里采用克制式信息呈现，只提炼最必要的说明，避免大段冗余描述。更多细节会通过链接引导至对应完整文档。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="q">Q：是否所有分类都有示例？</div>
+      <div class="a">大部分分区配有简单示例或边界说明，但并非全部。示例主要出现在操作类和定义类区域。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="q">Q：如何快速回到上一级？</div>
+      <div class="a">页面顶部始终保留当前区域标识，同时每个独立模块末尾设有返回索引的文本链接。</div>
+    </div>
+
+    <!-- 提示区 -->
+    <div class="notice">
+      <strong>提示</strong><br>
+      如果你对某个分类中的表述存在疑问，建议先查阅该分区顶部的“说明”段落，其中包含术语界定和适用范围。仍无法解决时，可尝试通过关联资料跳转至详细指南。
+    </div>
+
+    <!-- 相关信息区 -->
+    <hr class="divider">
+    <h2 style="border-bottom: none; margin-top: 0.6rem;">相关信息</h2>
+    <p style="font-size: 0.9rem;">
+      · 本页内容对应站点主知识库的索引层，不包含所有子条目。<br>
+      · 部分链接指向外部资源，请注意识别域名。<br>
+      · 如需反馈分类建议，可查阅页面底部联系途径。<br>
+      · 当前结构基于通用认知排序，未来可能调整。
+    </p>
+
+    <!-- 嵌入句子中的 乐鱼 链接（已在前文中自然出现一次，这里再次出现但保持自然） -->
+    <p style="margin-top: 1.8rem; font-size: 0.88rem; color: #4a5568;">
+      若想返回首页或重新定位，可直接通过 <a href="https://sitehome-leyu.com">乐鱼</a> 链接回到顶层目录。其他补充资源正逐步整合至对应分类下。
+    </p>
+
+    <div class="footer-note">
+      知识库入口 · 目录结构优先 · 当前版本索引
+    </div>
+  </div>
+</body>
+</html>
